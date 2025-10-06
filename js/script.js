@@ -58,9 +58,9 @@ headerBtn.forEach(function(element) {
 new Swiper('.hero__swiper', {
   loop: true,
   a11y: {
-    prevSlideMessage: 'Предыдущий слайд',
-    nextSlideMessage: 'Следующий слайд',
-    paginationBulletMessage: 'Перейти к слайду {{index}}',
+    prevSlideMessage: 'Previous slide',
+    nextSlideMessage: 'Next slide',
+    paginationBulletMessage: 'Go to slide {{index}}',
   },
 });
 
@@ -115,9 +115,9 @@ new Swiper('.hero__swiper', {
       prevEl: ".gallery__btn.btn__prev"
     },
     a11y: {
-      prevSlideMessage: 'Предыдущий слайд',
-      nextSlideMessage: 'Следующий слайд',
-      paginationBulletMessage: 'Перейти к слайду {{index}}',
+      prevSlideMessage: 'Previous slide',
+      nextSlideMessage: 'Next slide',
+      paginationBulletMessage: 'Go to slide {{index}}',
     },
     keyboard: {
       enabled: true,
@@ -299,18 +299,18 @@ var validation = new JustValidate('.form');
 validation
   .addField('.name', [{
     rule: 'required',
-    errorMessage: 'Вы не ввели имя',
+    errorMessage: 'Enter your name',
   },
   {
     validator: (value) => {
     return 	/^[a-zA-Zа-яА-Я]+$/i.test(value);
     },
-    errorMessage: 'Недопустимый формат',
+    errorMessage: 'Invalid format',
   },])
 
   .addField('.tel', [{
     rule: 'required',
-    errorMessage: 'Вы не ввели телефон',
+    errorMessage: 'Enter your phone number',
   }])
 
 form.addEventListener('submit', () => {
